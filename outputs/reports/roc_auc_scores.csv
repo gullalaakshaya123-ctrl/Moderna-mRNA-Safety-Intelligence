@@ -1,0 +1,3 @@
+Model,ROC AUC
+Logistic Regression,0.7911164465786314
+Random Forest,0.758703481392557

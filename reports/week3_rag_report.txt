@@ -1,0 +1,145 @@
+
+MODERNA mRNA VACCINE CLINICAL SAFETY & DOSAGE
+INTELLIGENCE PLATFORM
+
+WEEK 3 - RETRIEVAL AUGMENTED GENERATION (RAG) REPORT
+
+1. INTRODUCTION
+
+The objective of Week 3 was to develop a Retrieval-Augmented Generation (RAG) system using the supplied Moderna mRNA project reference document.
+
+The system retrieves relevant information from a local knowledge base and uses a Large Language Model (LLM) to generate answers based on the retrieved content.
+
+2. OBJECTIVES
+
+- Extract text from the supplied DOCX reference document.
+- Divide the extracted text into smaller overlapping chunks.
+- Generate vector embeddings.
+- Store embeddings in a ChromaDB vector database.
+- Retrieve relevant information using semantic search.
+- Integrate a local LLM for answer generation.
+- Test the system using different questions.
+
+3. TECHNOLOGIES USED
+
+- Python
+- Pandas
+- Tiktoken
+- Sentence Transformers
+- ChromaDB
+- Ollama
+- Llama 3.2 (3B)
+- Visual Studio Code
+
+4. IMPLEMENTATION
+
+Step 1: Document Extraction
+
+Extracted text from the supplied Moderna mRNA Safety Guidelines DOCX document using Python and python-docx.
+
+Output:
+data/mrna_safety_guidelines.txt
+
+Step 2: Text Chunking
+
+Used Tiktoken to tokenize the extracted text.
+
+Chunk size: 150 tokens
+Chunk overlap: 30 tokens
+
+Total chunks generated: 11
+
+Step 3: Embedding Generation
+
+Used the all-MiniLM-L6-v2 Sentence Transformer model to generate embeddings for the text chunks.
+
+Step 4: Vector Database Creation
+
+Used ChromaDB to create a persistent vector database.
+
+Collection: moderna_safety_guidelines
+Stored chunks: 11
+Database location: chroma_db
+
+Step 5: Information Retrieval
+
+Implemented semantic retrieval using question embeddings.
+
+Improved document ranking using keyword matching and section-heading prioritization.
+
+Step 6: LLM Integration
+
+Installed Ollama and downloaded the Llama 3.2 (3B) model.
+
+Integrated the local LLM with the ChromaDB retrieval pipeline using the Ollama Python library.
+
+Step 7: Answer Generation
+
+The system retrieves relevant document passages and supplies them as context to Llama 3.2.
+
+The model generates answers using the supplied project reference material.
+
+5. TESTING AND RESULTS
+
+Test 1: Transport Conditions
+
+Question:
+What are the transport conditions for mRNA products?
+
+Result:
+Retrieved the transport conditions section successfully.
+
+Test 2: Refrigerated Storage
+
+Question:
+What are the refrigerated storage requirements?
+
+Result:
+Retrieved the refrigerated storage information successfully.
+
+Test 3: Age-Banded Reference Information
+
+Question:
+What does the reference document say about age-banded dosing?
+
+Result:
+Retrieved the four age groups described in the project reference.
+
+Test 4: Adverse Event Reporting
+
+Question:
+What are the adverse event reporting and escalation criteria?
+
+Result:
+Retrieved the reporting thresholds and escalation criteria successfully.
+
+Overall Result:
+All four test questions generated relevant answers from the supplied reference document.
+
+6. PROJECT OUTPUTS
+
+- data/mrna_safety_guidelines.txt
+- src/prepare_guidelines.py
+- src/build_vector_db.py
+- src/test_retrieval.py
+- src/rag_qa.py
+- chroma_db/
+- reports/week3_rag_report.txt
+
+7. LIMITATIONS
+
+- Retrieval quality depends on document chunking and ranking.
+- The system uses a lightweight local language model.
+- Generated answers may omit information from retrieved passages.
+- The project reference is educational material and is not official clinical or regulatory guidance.
+- The system must not be used for real patient treatment or dosage decisions.
+
+8. CONCLUSION
+
+Successfully developed an educational RAG pipeline using Python, Sentence Transformers, ChromaDB and Llama 3.2.
+
+The system extracts information from the supplied reference document, stores it in a vector database, retrieves relevant passages and generates source-grounded answers.
+
+Four different question-answering tests were completed successfully.
+
+END OF WEEK 3 REPORT

@@ -1,0 +1,4 @@
+Question,Retrieval_Time_Seconds,LLM_Generation_Time_Seconds,Total_Time_Seconds
+What are the transport conditions for the vaccine?,0.3163,22.5546,22.8709
+What are the refrigerated storage conditions?,0.1439,20.444,20.5878
+What are the adverse event reporting requirements?,0.0425,28.4211,28.4636

@@ -1,0 +1,8 @@
+Feature,Importance
+num__Biomarker_Level,0.3847108748353358
+num__Vaccine_Dose_mcg,0.20873645907905827
+num__Age,0.17151606052778792
+num__Pre_Existing_Conditions,0.1617860309187779
+cat__Prior_Reaction_History_Unknown,0.031232031164968702
+cat__Prior_Reaction_History_Moderate,0.022828580972897083
+cat__Prior_Reaction_History_Mild,0.01918996250117443

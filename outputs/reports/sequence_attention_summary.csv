@@ -1,0 +1,2 @@
+Sequence,Sequence_Length,Nucleotide_Types,Attention_Matrix_Rows,Attention_Matrix_Columns,Average_Attention_Weight,Maximum_Attention_Weight,Minimum_Attention_Weight,All_Rows_Normalized
+ACGUACGUACGGCUA,15,4,15,15,0.06666671555555556,0.071216,0.06247,True

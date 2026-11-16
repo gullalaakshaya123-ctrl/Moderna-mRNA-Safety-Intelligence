@@ -1,0 +1,50 @@
+{
+    "project_title": "Moderna mRNA Vaccine Clinical Safety & Dosage Intelligence Platform",
+    "project_type": "Educational AI/ML Research Prototype",
+    "model_performance": [
+        {
+            "model_name": "Logistic Regression",
+            "accuracy": 0.71,
+            "precision": 0.7083333333333334,
+            "recall": 0.6938775510204082,
+            "f1_score": 0.7010309278350515
+        },
+        {
+            "model_name": "Random Forest",
+            "accuracy": 0.66,
+            "precision": 0.6744186046511628,
+            "recall": 0.5918367346938775,
+            "f1_score": 0.6304347826086957
+        }
+    ],
+    "rag_references": [
+        {
+            "question": "What are the transport conditions for mRNA products?",
+            "retrieved_information": "Validated cold-chain shipping containers and continuous temperature logging are required during transport.",
+            "source": "mrna_safety_guidelines.txt"
+        },
+        {
+            "question": "What are the refrigerated storage requirements?",
+            "retrieved_information": "The project reference describes refrigerated storage between 2C and 8C for short-term use.",
+            "source": "mrna_safety_guidelines.txt"
+        },
+        {
+            "question": "What does the reference document say about age-banded dosing?",
+            "retrieved_information": "The reference describes four age groups: 6 months to 4 years, 5 to 11 years, 12 to 64 years, and 65 years and older.",
+            "source": "mrna_safety_guidelines.txt"
+        },
+        {
+            "question": "What are the adverse event reporting and escalation criteria?",
+            "retrieved_information": "The reference describes reporting thresholds and escalation criteria for medically significant adverse events.",
+            "source": "mrna_safety_guidelines.txt"
+        }
+    ],
+    "summary": "**Project Summary: Moderna mRNA Vaccine Clinical Safety & Dosage Intelligence Platform**\n\n**Model Comparison:**\n\nThis project compares the performance of two machine learning models: Logistic Regression and Random Forest. The models were evaluated on their accuracy, precision, recall, and F1 score. The results show that the Logistic Regression model achieved the highest accuracy (0.71) and F1 score (0.70), while the Random Forest model performed slightly worse (accuracy: 0.66, F1 score: 0.63).\n\n**RAG Implementation and Tests:**\n\nThe RAG (Reference and Answer Generation) implementation consists of four tests that retrieve information from a reference document (mrna_safety_guidelines.txt). The tests cover the following topics:\n\n1. Transport conditions for mRNA products: The reference document requires validated cold-chain shipping containers and continuous temperature logging during transport.\n2. Refrigerated storage requirements: The project reference recommends refrigerated storage between 2C and 8C for short-term use.\n3. Age-banded dosing: The reference describes four age groups: 6 months to 4 years, 5 to 11 years, 12 to 64 years, and 65 years and older.\n4. Adverse event reporting and escalation criteria: The reference outlines reporting thresholds and escalation criteria for medically significant adverse events.\n\n**Important Notes:**\n\n* This is an educational prototype and should not be used for clinical decision-making.\n* The project reference is not official clinical guidance, but rather a resource for educational purposes.\n* The results presented are based on the provided data and should not be taken as clinical recommendations.",
+    "limitations": [
+        "The dataset and model results do not establish clinical validity.",
+        "The RAG reference is educational project material, not official clinical guidance.",
+        "LLM-generated answers may contain omissions or errors.",
+        "The system must not be used for real patient dosage or treatment decisions."
+    ],
+    "educational_prototype": true
+}

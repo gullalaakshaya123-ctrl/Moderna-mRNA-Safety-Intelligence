@@ -1,0 +1,60 @@
+
+MODERNA mRNA VACCINE CLINICAL SAFETY
+AND DOSAGE INTELLIGENCE PLATFORM
+
+WEEK 1 - DATA PREPROCESSING AND ML
+
+1. Dataset Information
+Total records: 500
+Total columns: 7
+
+2. Data Cleaning
+Missing Biomarker Level values: 20
+Missing Prior Reaction History values: 308
+
+Missing reaction history values were replaced
+with Unknown.
+
+3. Machine Learning Models
+
+Logistic Regression:
+Accuracy: 72%
+Precision: 73.33%
+Recall: 67.35%
+F1 Score: 70.21%
+
+Random Forest:
+Accuracy: 65%
+Precision: 65.22%
+Recall: 61.22%
+F1 Score: 63.16%
+
+4. Best Performing Model
+
+Logistic Regression achieved the highest
+accuracy of 72% on the test dataset.
+
+5. Feature Importance
+
+Biomarker Level: 38.47%
+Vaccine Dose: 20.87%
+Age: 17.15%
+Pre-existing Conditions: 16.18%
+
+6. Generated Outputs
+
+processed_patient_records.csv
+logistic_regression.pkl
+random_forest.pkl
+model_comparison.csv
+model_accuracy.png
+feature_importance.csv
+feature_importance.png
+
+7. Limitations
+
+The dataset contains only 500 records.
+Results are based on an educational dataset.
+Feature importance does not establish causation.
+This prototype must not be used for real
+clinical or vaccine dosage decisions.
